@@ -99,9 +99,7 @@ Examples link brpc statically, if you need to link the shared version, use `cmak
 
 **Run tests**
 ```shell
-$ mkdir bld && cd bld && cmake -DBUILD_UNIT_TESTS=ON .. && make
-$ cd test
-$ sh run_tests.sh
+$ mkdir bld && cd bld && cmake -DBUILD_UNIT_TESTS=ON .. && make && make test
 ```
 
 ## Fedora/CentOS
@@ -191,9 +189,7 @@ Examples link brpc statically, if you need to link the shared version, use `cmak
 
 **Run tests**
 ```shell
-$ mkdir bld && cd bld && cmake -DBUILD_UNIT_TESTS=ON .. && make
-$ cd test
-$ sh run_tests.sh
+$ mkdir bld && cd bld && cmake -DBUILD_UNIT_TESTS=ON .. && make && make test
 ```
 
 ## Linux with self-built deps
@@ -331,9 +327,7 @@ Examples link brpc statically, if you need to link the shared version, use `cmak
 
 **Run tests**
 ```shell
-$ mkdir bld && cd bld && cmake -DBUILD_UNIT_TESTS=ON .. && make
-$ cd test
-$ sh run_tests.sh
+$ mkdir bld && cd bld && cmake -DBUILD_UNIT_TESTS=ON .. && make && make test
 ```
 
 # Supported deps
@@ -356,7 +350,7 @@ no known issues.
 
 no known issues.
 
-## protobuf: 2.4-3.4
+## protobuf: 2.4+
 
 Be compatible with pb 3.x and pb 2.x with the same file:
 Don't use new types in proto3 and start the proto file with `syntax="proto2";`
@@ -364,7 +358,7 @@ Don't use new types in proto3 and start the proto file with `syntax="proto2";`
 
 Arena in pb 3.x is not supported yet.
 
-## gflags: 2.0-2.21
+## gflags: 2.0-2.2.1
 
 no known issues.
 
